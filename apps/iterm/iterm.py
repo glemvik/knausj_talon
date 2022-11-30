@@ -54,12 +54,12 @@ class user_actions:
     #     """selects the file"""
     #     actions.insert(path)
 
-    def terminal_list_directories():
-        actions.insert("ls")
+    def terminal_list_directories(path: str):
+        actions.insert(f"ll {path}")
         actions.key("enter")
 
     def terminal_list_all_directories():
-        actions.insert("ls -a")
+        actions.insert("ll -a")
         actions.key("enter")
 
     def terminal_change_directory(path: str):
@@ -67,19 +67,14 @@ class user_actions:
         if path:
             actions.key("enter")
 
+    def terminal_change_directory_up():
+        actions.insert("cd ..")
+        actions.key("enter")
+
     def terminal_change_directory_root():
         """Root of current drive"""
         actions.insert("cd /")
         actions.key("enter")
 
-    def terminal_clear_screen():
-        """Clear screen"""
-        actions.key("ctrl-l")
-
     def terminal_run_last():
         actions.key("up enter")
-
-    def terminal_kill_all():
-        actions.key("ctrl-c")
-        actions.insert("y")
-        actions.key("enter")
