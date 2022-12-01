@@ -24,3 +24,12 @@ class Actions:
 
     def terminal_run_last():
         """Repeats the last command"""
+
+    def terminal_grep_single(text: str):
+        """Grep single file"""
+
+    def terminal_grep_recursive(text: str):
+        """Grep recursively"""
+
+    def terminal_vim():
+        """Open file with vim"""

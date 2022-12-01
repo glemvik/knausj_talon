@@ -78,3 +78,16 @@ class user_actions:
 
     def terminal_run_last():
         actions.key("up enter")
+ 
+    def terminal_grep_recursive(text: str):
+        actions.insert(f"grep -r {text}")
+        if text:
+            actions.key("enter")
+ 
+    def terminal_grep_single(text: str):
+        actions.insert(f"grep {text}")
+        if text:
+            actions.key("enter")
+
+    def terminal_vim():
+        actions.insert("vim ")

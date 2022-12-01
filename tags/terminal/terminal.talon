@@ -9,6 +9,9 @@ katie up: user.terminal_change_directory_up()
 katie root: user.terminal_change_directory_root()
 #go <user.system_path>: insert('cd "{system_path}"\n')
 run last: user.terminal_run_last()
+grip [<user.text>]: user.terminal_grep_recursive(text or "")
+grip single [<user.text>]: user.terminal_grep_single(text or "")
+vim: user.terminal_vim()
 
 copy paste:
     edit.copy()
