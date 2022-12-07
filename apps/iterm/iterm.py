@@ -80,12 +80,16 @@ class user_actions:
         actions.key("up enter")
  
     def terminal_grep_recursive(text: str):
-        actions.insert(f"grep -r {text}")
+        actions.insert("grep -r \'\'")
+        actions.key("left")
+        actions.insert(f"{text}")
         if text:
             actions.key("enter")
  
     def terminal_grep_single(text: str):
-        actions.insert(f"grep {text}")
+        actions.insert("grep \'\'")
+        actions.key("left")
+        actions.insert(f"{text}")
         if text:
             actions.key("enter")
 

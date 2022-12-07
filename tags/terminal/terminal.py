@@ -1,4 +1,4 @@
-from talon import Module
+from talon import Module, actions
 
 mod = Module()
 
@@ -33,3 +33,11 @@ class Actions:
 
     def terminal_vim():
         """Open file with vim"""
+
+    def terminal_remove_recursive(text: str):
+        """Delete directory  and contained files"""
+        actions.insert(f"rm -r {text}")
+
+    def terminal_remove_single(text: str):
+        """Delete single file"""
+        actions.insert(f"rm {text}")

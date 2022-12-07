@@ -248,3 +248,42 @@ class Actions:
             window,
             screen_number=screen_number,
         )
+
+    ########################################################
+    ### Move the active window using rectangle shortcuts ###
+    ########################################################
+    def snap_rectangle_full() -> None:
+        """Make the active window go full screen"""
+        actions.key("cmd-alt-f")
+
+    def snap_rectangle_top_half() -> None:
+        """Snap the active window to top half"""
+        actions.key("cmd-alt-up")
+
+    def snap_rectangle_bottom_half() -> None:
+        """Snap the active window to bottom half"""
+        actions.key("cmd-alt-down")
+
+    def snap_rectangle_left_half() -> None:
+        """Snap the active window to left half"""
+        actions.key("cmd-alt-left")
+
+    def snap_rectangle_right_half() -> None:
+        """Snap the active window to right half"""
+        actions.key("cmd-alt-right")
+
+    def snap_rectangle_left_top() -> None:
+        """Snap the active window to left top"""
+        actions.key("cmd-ctrl-left")
+
+    def snap_rectangle_left_bottom() -> None:
+        """Snap the active window to left bottom"""
+        actions.key("cmd-ctrl-shift-left")
+
+    def snap_rectangle_right_top() -> None:
+        """Snap the active window to right top"""
+        actions.key("cmd-ctrl-right")
+
+    def snap_rectangle_right_bottom() -> None:
+        """Snap the active window to right bottom"""
+        actions.key("cmd-ctrl-shift-right")

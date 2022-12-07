@@ -12,6 +12,8 @@ run last: user.terminal_run_last()
 grip [<user.text>]: user.terminal_grep_recursive(text or "")
 grip single [<user.text>]: user.terminal_grep_single(text or "")
 vim: user.terminal_vim()
+remove [<user.text>]: user.terminal_remove_recursive(text or "")
+remove single [<user.text>]: user.terminal_remove_single(text or "")
 
 copy paste:
     edit.copy()

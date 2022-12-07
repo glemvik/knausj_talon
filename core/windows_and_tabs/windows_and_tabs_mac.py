@@ -38,10 +38,10 @@ class AppActions:
         actions.key("cmd-alt-h")
 
     def window_next():
-        actions.key("cmd-`")
+        actions.key("cmd-ctrl-F7") # Doesn't seem to work
 
     def window_open():
         actions.key("cmd-n")
 
     def window_previous():
-        actions.key("cmd-shift-`")
+        #actions.key("cmd-shift-`") # Doesn't seem to work
