@@ -14,8 +14,15 @@ grip single [<user.text>]: user.terminal_grep_single(text or "")
 vim: user.terminal_vim()
 remove [<user.text>]: user.terminal_remove_recursive(text or "")
 remove single [<user.text>]: user.terminal_remove_single(text or "")
+cancel: user.terminal_cancel()
 
 copy paste:
     edit.copy()
     sleep(50ms)
     edit.paste()
+
+# Hack to avoid bug that opens spotlight search
+# TODO: Move to python file, and remove hack
+window next: key("cmd-ctrl-f7")
+window previous: key("cmd-ctrl-shift-f7")
+window <number>: key("cmd-alt-{number}")

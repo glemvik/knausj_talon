@@ -41,3 +41,7 @@ class Actions:
     def terminal_remove_single(text: str):
         """Delete single file"""
         actions.insert(f"rm {text}")
+
+    def terminal_cancel():
+        """cancel current process"""
+        actions.key("ctrl-c")

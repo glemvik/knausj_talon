@@ -7,6 +7,7 @@ mod = Module()
 class tab_actions:
     def tab_jump(number: int):
         """Jumps to the specified tab"""
+        actions.key(f"cmd-{number}")
 
     def tab_final():
         """Jumps to the final tab"""
