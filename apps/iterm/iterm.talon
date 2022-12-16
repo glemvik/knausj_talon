@@ -7,3 +7,4 @@ tag(): terminal
 tag(): user.git
 #tag(): user.kubectl #Disable for now, will look more closely at this when necessary
 tag(): user.tabs
+tag(): user.emoji

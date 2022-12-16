@@ -1,5 +1,4 @@
 tag: user.emoji
 -
-emoticon {user.emoticon}: "{emoticon}"
+# TODO: edit emojis in csv-file
 emoji {user.emoji}: user.paste(emoji)
-kaomoji {user.kaomoji}: user.paste(kaomoji)

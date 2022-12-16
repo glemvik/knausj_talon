@@ -26,3 +26,8 @@ copy paste:
 window next: key("cmd-ctrl-f7")
 window previous: key("cmd-ctrl-shift-f7")
 window <number>: key("cmd-alt-{number}")
+
+# TODO: temporary command for searching for talon tags
+grip tag: 
+    insert("grep -r \'tag[()]*: [user.]*\'")
+    key("left")
