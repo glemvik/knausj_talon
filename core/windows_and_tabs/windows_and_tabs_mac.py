@@ -44,4 +44,4 @@ class AppActions:
         actions.key("cmd-n")
 
     def window_previous():
-        #actions.key("cmd-shift-`") # Doesn't seem to work
+        actions.key("cmd-shift-`") # Doesn't seem to work

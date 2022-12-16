@@ -31,8 +31,9 @@ class Actions:
     def terminal_grep_recursive(text: str):
         """Grep recursively"""
 
-    def terminal_vim():
+    def terminal_vim(text: str):
         """Open file with vim"""
+        actions.insert(f"vim {text}")
 
     def terminal_remove_recursive(text: str):
         """Delete directory  and contained files"""

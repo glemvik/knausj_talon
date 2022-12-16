@@ -39,6 +39,13 @@ class Actions:
         else:
             actions.key(f"ctrl-{key}")
 
+    def chrome_tab_search(text: str):
+        """Search title of all open tabs and recently closed tabs""" 
+        if app.platform == "mac":
+            actions.key("cmd-shift-a")
+            if text:
+                actions.sleep("50ms")
+                actions.insert(text)
 
 @ctx.action_class("user")
 class user_actions:

@@ -92,6 +92,3 @@ class user_actions:
         actions.insert(f"{text}")
         if text:
             actions.key("enter")
-
-    def terminal_vim():
-        actions.insert("vim ")
