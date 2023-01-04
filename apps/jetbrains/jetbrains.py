@@ -372,3 +372,6 @@ class UserActions:
 
     # def split_last():
     # def split_number(index: int):
+
+    def jump_to_navigation():
+        actions.key("cmd-up")

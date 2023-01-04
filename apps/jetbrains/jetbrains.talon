@@ -9,6 +9,7 @@ tag(): user.tabs
 
 # Auto complete
 done: user.idea("action EditorCompleteStatement")
+suggest: key(alt-enter)
 
 # Refactoring
 refactor: user.idea("action Refactorings.QuickListPopupAction")
@@ -36,6 +37,10 @@ go type: user.idea("action GotoTypeDeclaration")
 go test: user.idea("action GotoTest")
 go back: user.idea("action Back")
 go forward: user.idea("action Forward")
+structure: user.idea("action FileStructurePopup")
+navigate: key(cmd-up) # TODO: For some reason this doesn't work: 'navigate: user.jump_to_navigation()'
+recent: user.idea("action RecentFiles")
+changed: user.idea("action RecentChangedFiles")
 
 # Search
 find all: user.idea("action SearchEverywhere")
@@ -50,8 +55,6 @@ action: user.idea("action GotoAction")
 action <user.text>:
     user.idea("action GotoAction")
     insert(text)
-recent: user.idea("action RecentFiles")
-# Todo: recent changed files
 
 # Marks
 find mark: user.idea("action ShowBookmarks")
