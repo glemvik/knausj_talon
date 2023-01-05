@@ -7,10 +7,10 @@ tag: user.typescript
 
 ctx.lists["user.code_type"] = {
     "boolean": "boolean",
-    "integer": "int",
     "string": "string",
     "null": "null",
     "undefined": "undefined",
+    "unknown": "unknown",
     "number": "number",
     "any": "any",
 }
