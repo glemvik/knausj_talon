@@ -243,14 +243,20 @@ class UserActions:
     def code_operator_bitwise_right_shift_assignment():
         actions.auto_insert(" >>= ")
 
+    def code_comment_line_prefix():
+        actions.auto_insert("// ")
+
     def code_insert_function(text: str, selection: str):
-        text += f"({selection or ''})"
+        text += f" = ({selection or ''}) =>"
         actions.user.paste(text)
+        actions.edit.left()
+        actions.edit.left()
+        actions.edit.left()
         actions.edit.left()
 
     def code_default_function(text: str):
         """Inserts function declaration without modifiers"""
-        result = "function {}".format(
+        result = "const {}".format(
             actions.user.formatted_text(
                 text, settings.get("user.code_private_function_formatter")
             )
@@ -260,7 +266,7 @@ class UserActions:
 
     def code_private_function(text: str):
         """Inserts private function declaration"""
-        result = "function {}".format(
+        result = "const {}".format(
             actions.user.formatted_text(
                 text, settings.get("user.code_private_function_formatter")
             )
@@ -279,7 +285,7 @@ class UserActions:
     #     actions.user.code_insert_function(result, None)
 
     def code_protected_function(text: str):
-        result = "function {}".format(
+        result = "const {}".format(
             actions.user.formatted_text(
                 text, settings.get("user.code_protected_function_formatter")
             )
@@ -297,7 +303,7 @@ class UserActions:
     #     actions.user.code_insert_function(result, None)
 
     def code_public_function(text: str):
-        result = "function {}".format(
+        result = "const {}".format(
             actions.user.formatted_text(
                 text, settings.get("user.code_public_function_formatter")
             )

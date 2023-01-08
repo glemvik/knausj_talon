@@ -20,7 +20,7 @@ ctx.lists["user.code_type"] = {
 class UserActions:
     def code_private_function(text: str):
         """Inserts private function declaration"""
-        result = "private function {}".format(
+        result = "private const {}".format(
             actions.user.formatted_text(
                 text, settings.get("user.code_private_function_formatter")
             )
@@ -29,7 +29,7 @@ class UserActions:
         actions.user.code_insert_function(result, None)
 
     def code_protected_function(text: str):
-        result = "protected function {}".format(
+        result = "protected const {}".format(
             actions.user.formatted_text(
                 text, settings.get("user.code_protected_function_formatter")
             )
@@ -38,7 +38,7 @@ class UserActions:
         actions.user.code_insert_function(result, None)
 
     def code_public_function(text: str):
-        result = "public function {}".format(
+        result = "public const {}".format(
             actions.user.formatted_text(
                 text, settings.get("user.code_public_function_formatter")
             )
