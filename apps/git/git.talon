@@ -4,10 +4,6 @@ and tag: user.git
 git {user.git_command} [<user.git_arguments>]:
     args = git_arguments or ""
     "git {git_command}{args} "
-git commit [<user.git_arguments>] message [<user.prose>]:
-    args = git_arguments or ""
-    message = prose or ""
-    user.insert_between("git commit{args} --message '{message}", "'")
 git stash [push] [<user.git_arguments>] message [<user.prose>]:
     args = git_arguments or ""
     message = prose or ""
@@ -17,6 +13,8 @@ git stash [push] [<user.git_arguments>] message [<user.prose>]:
 # change repository or index state).
 git status$: "git status\n"
 git add patch$: "git add --patch\n"
+git commit$: "git commit\n"
+git log$: "gl\n"
 git show head$: "git show HEAD\n"
 git diff: "git diff\n"
 git diff (cached | cashed)$: "git diff --cached\n"

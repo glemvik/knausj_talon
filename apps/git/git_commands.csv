@@ -17,7 +17,6 @@ gc
 grep
 help
 init, in it
-log
 ls-files, ls files
 merge
 mergetool, merge tool
