@@ -8,12 +8,12 @@ tag(): user.code_comment_block_c_like
 tag(): user.code_data_bool
 tag(): user.code_data_null
 tag(): user.code_functions
-tag(): user.code_functions_common
+#tag(): user.code_functions_common
 tag(): user.code_keywords
 tag(): user.code_libraries
 tag(): user.code_operators_array
 tag(): user.code_operators_assignment
-tag(): user.code_operators_bitwise
+#tag(): user.code_operators_bitwise
 tag(): user.code_operators_lambda
 tag(): user.code_operators_math
 
@@ -29,17 +29,12 @@ is strict equal: " === "
 is strict not equal: " !== "
 is null else: " ?? "
 
-state const: "const "
-
-state let: "let "
-
-state var: "var "
-
-state export: "export "
-
-state async: "async "
-
-state await: "await "
+#state const: "const "
+#state let: "let "
+#state var: "var "
+#state export: "export "
+#state async: "async "
+#state await: "await "
 
 dot {user.code_common_member_function}:
     user.insert_between(".{code_common_member_function}(", ")")
