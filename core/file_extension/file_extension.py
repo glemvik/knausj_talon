@@ -5,6 +5,7 @@ from ..user_settings import get_list_from_csv
 mod = Module()
 mod.list("file_extension", desc="A file extension, such as .py")
 
+# Make changes in file instead of here
 _file_extensions_defaults = {
     "dot pie": ".py",
     "dot talon": ".talon",

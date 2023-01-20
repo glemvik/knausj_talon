@@ -12,6 +12,7 @@ mod.list(
     desc="A search engine.  Any instance of %s will be replaced by query text",
 )
 
+# Add new links to file instead of here
 website_defaults = {
     "talon home page": "http://talonvoice.com",
     "talon slack": "http://talonvoice.slack.com/messages/help",
