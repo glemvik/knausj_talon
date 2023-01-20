@@ -22,6 +22,10 @@ class Actions:
     def terminal_change_directory_root():
         """Root of current drive"""
 
+    def terminal_clear_screen():
+        """Clear screen"""
+        actions.insert("clear\n")
+
     def terminal_run_last():
         """Repeats the last command"""
 
