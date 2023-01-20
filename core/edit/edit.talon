@@ -1,4 +1,4 @@
-find it: edit.find()
+search it: edit.find()
 
 next one: edit.find_next()
 
