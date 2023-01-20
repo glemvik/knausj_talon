@@ -64,3 +64,10 @@ cube detach:
     key("ctrl-p")
     key("ctrl-q")
 cube shell: user.insert_between("kubectl exec -it ", " -- /bin/bash")
+
+cube on: "kubeon\n"
+cube off: "kubeoff\n"
+cube images: "kgi\n"
+cube images grip:
+    insert("kgi | ")
+    user.terminal_grep_single("")
