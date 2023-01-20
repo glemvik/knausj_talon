@@ -46,3 +46,11 @@ class Actions:
     def terminal_cancel():
         """cancel current process"""
         actions.key("ctrl-c")
+
+    def terminal_pipe():
+        """insert padded pipe sign"""
+        actions.insert(" | ")
+
+    def terminal_tree_level(number: str):
+        """list tree at current path and specified level"""
+        actions.insert(f"tree . -L {number}\n")
