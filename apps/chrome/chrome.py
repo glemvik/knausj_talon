@@ -47,6 +47,10 @@ class Actions:
                 actions.sleep("50ms")
                 actions.insert(text)
 
+    def chrome_extension_dashlane():
+        """Open dashlane extension"""
+        actions.key("cmd-shift-l")
+
 @ctx.action_class("user")
 class user_actions:
     def tab_jump(number: int):
