@@ -1,0 +1,19 @@
+Path,Spoken
+/Users/Gunvor,user
+/Users/Gunvor/Desktop,desktop
+/Users/Gunvor/Documents,documents
+/Users/Gunvor/Downloads,downloads
+/Users/Gunvor/Documents/git,git
+/Users/Gunvor/digipost/digipost,app backend
+/Users/Gunvor/digipost/postkasse,app post
+/Users/Gunvor/digipost/digipost-webapp,app web
+/Users/Gunvor/digipost/mobilapp,app mobile
+/Users/Gunvor/digipost/styleguide,app style
+/Users/Gunvor/digipost/azure-digipost/apps/backend/digipost/vars,azure wbackend
+/Users/Gunvor/digipost/azure-digipost/apps/frontend/digipost-postkasse/vars,azure post
+/Users/Gunvor/digipost/azure-digipost/apps/frontend/digipost-webapp/vars,azure web
+/Users/Gunvor/.talon,talon home
+/Users/Gunvor/.talon/user/knausj_talon,talon config
+/Users/Gunvor/.talon/user/knausj_talon/settings,talon settings
+/Users/Gunvor/.talon/user/knausj_talon/apps,talon apps
+/Users/Gunvor/.talon/user/knausj_talon/tags,talon tags
