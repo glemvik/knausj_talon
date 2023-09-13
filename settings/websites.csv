@@ -12,6 +12,7 @@ https://mail.google.com/,mail
 https://github.com/,github
 https://www.youtube.com/,youtube
 https://www.nrk.no/,news
+https://localhost:9090/autologon,post local
 https://test.digipost.no/autologon,post test one
 https://qa.digipost.no/autologon,post test two
 https://difitest.digipost.no/autologon,post test three
