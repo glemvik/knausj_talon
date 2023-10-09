@@ -3,11 +3,15 @@ app: slack
 -
 tag(): user.messaging
 tag(): user.emoji
+
 # Workspace
-workspace <number>: key("cmd-{number}")
+work <number>: key("cmd-{number}")
+
 # Channel
 (slack | lack) [channel] info: key(cmd-shift-i)
+
 # Navigation
+(slack | lack) go: key(cmd-k)
 focus (move | next): key(ctrl-`)
 (section | zone) [next]: key(f6)
 (section | zone) (previous | last): key(shift-f6)
@@ -22,6 +26,7 @@ focus (move | next): key(ctrl-`)
 (slack | lack) (starred [items] | stars): key(cmd-shift-s)
 (slack | lack) unread [messages]: key(cmd-shift-a)
 (go | undo | toggle) full: key(ctrl-cmd-f)
+
 # Messaging
 grab left: key(shift-up)
 grab right: key(shift-down)
@@ -38,11 +43,13 @@ bold: key(cmd-b)
 (italic | italicize): key(cmd-i)
 (strike | strikethrough): key(cmd-shift-x)
 (slack | lack) snippet: key(cmd-shift-enter)
+
 # Calls
 ([toggle] mute | unmute): key(m)
 (slack | lack) huddle: key(cmd-shift-h)
 (slack | lack) ([toggle] video): key(v)
 (slack | lack) invite: key(a)
+
 # Miscellaneous
 (slack | lack) shortcuts: key(cmd-/)
 emote <user.text>: "{text}"

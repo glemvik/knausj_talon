@@ -2,6 +2,7 @@ tag: terminal
 and tag: user.npm
 -
 node install$: "npm install\n"
+node clean install$: "npm ci\n"
 node install [<user.text>]:
     insert("npm install ")
     insert(text or "")
@@ -17,4 +18,6 @@ node run [<user.text>]:
     insert(text or "")
 node format: "npm run format:write\n"
 
-node use: "nvm use"
+node use: "nvm use\n"
+node list: "nvm list\n"
+node version: "nvm version\n"
