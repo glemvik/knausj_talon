@@ -10,3 +10,4 @@ go <user.arrow_keys>: user.move_cursor(arrow_keys)
 press <user.modifiers>: key(modifiers)
 # for consistency with dictation mode and explicit arrow keys if you need them.
 press <user.keys>: key(keys)
+yup: key("enter")
