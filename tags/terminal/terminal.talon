@@ -24,12 +24,6 @@ copy paste:
     sleep(50ms)
     edit.paste()
 
-# Hack to avoid bug that opens spotlight search
-# TODO: Move to python file, and remove hack
-window next: key("cmd-ctrl-f7")
-window previous: key("cmd-ctrl-shift-f7")
-window <number>: key("cmd-alt-{number}")
-
 # TODO: temporary command for searching for talon tags
 grip tag: 
     insert("grep -r \'tag[()]*: [user.]*\'")
